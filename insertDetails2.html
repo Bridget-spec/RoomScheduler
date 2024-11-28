@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>Insert form</title> 
+<style type = "text/css"> 
+label{ 
+display:block; 
+font-weight:bold; 
+text-align:right; 
+width:180px; 
+float:left; 
+}
+
+input{ 
+font-size:12px; 
+padding:4px 2px; 
+border:solid 1px #aacfe4; 
+width: 200px; 
+margin:2px 0 10px 5px; 
+}
+</style> 
+    </head> 
+    <body> 
+<div style = "width:30%; float:left"> 
+<?php include 'index.html';?> 
+</div>
+
+    <form action="insertme2.php" method="post"> 
+<label>Title:</label> <input type="text" name="title" /><br>
+<label>Date:</label> <input type="text" name="date" /><br>
+<label>Description:</label> <input type="text" name="description" /><br>
+<label>Start Time:</label> <input type="text" name="startTime" /><br>
+<label>End Time:</label> <input type="text" name="endTime" /><br>
+<label>Booking ID:</label> <input type="text" name="bookingid" /><br>
+<label>Room ID:</label> <input type="text" name="roomid" /><br>
+<label>User ID:</label> <input type="text" name="userid" /><br>
+<label>Status:</label> <input type="text" name="status" /><br>
+<label>Pattern:</label> <input type="text" name="pattern" /><br>
+<input type="Submit" value= "Insert"/><input type="Reset"/> 
+    </form> 
+</body> 
+</html>
